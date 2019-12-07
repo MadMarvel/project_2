@@ -1,0 +1,26 @@
+.promo {
+  background: url(/Elements/Картинки.png) no-repeat 0 0 / 80%, url(/Elements/background.png) no-repeat 0 0 / 100%;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.why  {
+  background: url(/Elements/узор\ лист.png) no-repeat;
+  background-position-x: 0;
+  background-position-y: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.why:after {
+  content: '';
+  position: absolute;
+  bottom: -140px;
+  width: 230px;
+  height: 330px;
+  background: url(/Elements/малина.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 100;
+}

@@ -1,0 +1,74 @@
+.whychoco__container  {
+  .whychoco__title {
+    @include Alegreya();
+    font-weight: bold;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .whychoco__text {
+    @include Alegreya();
+    font-size: 18px;
+    font-weight: 400;
+    color: $grey;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .whychoco__list {
+    display: flex;
+    justify-content: space-around;
+    @include Alegreya();
+  }
+
+  .whychoco__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 88px;
+    position: relative;
+  }
+
+  .whychoco__item:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 55px;
+    right: -30px;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .whychoco__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: $grey_light;
+  }
+
+  .whychoco__title-pic {
+    margin-top: 65px;
+    font-size: 27px;
+  }
+
+  .whychoco__text-pic {
+    width: 260px;
+    font-size: 14px;
+    font-weight: 300;
+    color: $grey;
+  }
+}
+

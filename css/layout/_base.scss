@@ -1,0 +1,48 @@
+.body {
+  line-height: 1.42;
+}
+
+.wrapper  {
+  overflow: hidden;
+  min-width: 1100px;
+  min-height: 100%;
+  display: flex;
+}
+
+.wrapper__content {
+  flex: 1;
+}
+
+.container  {
+  width: 940px;
+  margin: 0 auto;
+  line-height: 1.42;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  @include Alegreya();
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}

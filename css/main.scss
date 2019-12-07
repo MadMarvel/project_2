@@ -1,0 +1,24 @@
+//colors
+$white: #fff;
+$green: #0f5a47;
+$black: #0d0d0d;
+$grey: #8f8f8f;
+$grey_light: #f2f5f4;
+
+//normalize
+@import './layout/normalize.css';
+@import './main.css';
+
+//setups
+@import './layout/fonts';
+
+//blocks
+@import './layout/base';
+@import './blocks/section';
+@import './blocks/header';
+@import './blocks/naturchoco';
+@import './blocks/btn';
+@import './blocks/specification';
+@import './blocks/whychoco';
+@import './blocks/feedback';
+@import './blocks/team';

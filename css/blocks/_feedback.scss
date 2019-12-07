@@ -1,0 +1,47 @@
+.feedback__wrapper {
+  background: url('/Elements/Прямоугольник\ 11\ kопировать\ 3.png');
+  background-repeat: no-repeat;
+  padding: 52px 48px;
+  display: flex;
+}
+
+.feedback__title {
+  text-align: center;
+  font-size: 48px ;
+  margin-bottom: 80px;
+}
+
+.feedback__img {
+  margin-right: 20px;
+}
+
+.feedback__title-img {
+  @include Alegreya ();
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.feedback__text-img {
+  width: 80%;
+  @include Alegreya ();
+  font-weight: 400;
+  font-size: 18px;
+  color: $grey;
+}
+
+.feedback__text-signature {
+  @include Alegreya ();
+  font-weight: 500;
+  font-size: 18px;
+  color: $grey;
+}
+
+.feedback__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__item {
+  margin-right: 25px;
+}

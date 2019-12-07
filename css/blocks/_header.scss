@@ -1,0 +1,47 @@
+.header__container  {
+  height: 45px;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+
+  .navigation__box  {
+    display: flex;
+  }
+
+  .navigation__item {
+    margin: auto 15px;
+    color: $white;
+    font-family: 'Alegreya Sans', Arial, Helvetica, serif;
+    font-weight: 400;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contact__phone {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-family: 'Alegreya Sans', Arial, Helvetica, serif;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .contact__phone::before  {
+    content: '';
+    width: 12px;
+    height: 11px;
+    background-image: url(../Elements/phone\ .png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 6px;
+    
+  
+  }
+}
