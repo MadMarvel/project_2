@@ -261,4 +261,38 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya Sans', helvetica, sans-serif;
   font-weight: 500; }
 
+.options {
+  background-image: url("../../Elements/Background__options.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative; }
+  .options__title {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    font-weight: bold; }
+  .options__list, .options__item {
+    height: 100%; }
+  .options__item {
+    display: flex; }
+  .options__trigger {
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .options__content-wrap {
+    max-width: 540px; }
+  .options__content {
+    padding: 25px 50px;
+    background: rgba(53, 54, 54, 0.93);
+    height: 100%;
+    box-sizing: border-box; }
+  .options__desc {
+    font-family: 'Alegreya Sans', helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff; }
+
 /*# sourceMappingURL=main.css.map */

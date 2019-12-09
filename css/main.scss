@@ -5,6 +5,9 @@ $black: #0d0d0d;
 $grey: #8f8f8f;
 $grey_light: #f2f5f4;
 
+//mixins
+@import '../css/blocks/mixins';
+
 //normalize
 @import './layout/normalize.css';
 @import './main.css';
@@ -22,3 +25,4 @@ $grey_light: #f2f5f4;
 @import './blocks/whychoco';
 @import './blocks/feedback';
 @import './blocks/team';
+@import './blocks/options';

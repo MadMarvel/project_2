@@ -1,0 +1,39 @@
+.options {
+  @include bg-image ('../../Elements/Background__options.png', cover);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    font-weight: bold;
+  }
+  &__list, &__item {
+    height: 100%;
+  }
+  &__item {
+    display: flex;
+  }
+  &__trigger {
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+  }
+  &__content-wrap {
+    max-width: 540px;
+  }
+  &__content {
+    padding: 25px 50px;
+    background: rgba(#353636, .93);
+    height: 100%;
+    box-sizing: border-box;
+  }
+  &__desc {
+    @include Alegreya();
+    font-weight: 500;
+    font-size: 16px;
+    color: $white;
+  }
+}
