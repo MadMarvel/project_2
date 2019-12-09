@@ -43,13 +43,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px; }
 
 .promo {
-  background: url(../../Elements/Картинки.png) no-repeat 0 0/80%, url(../../Elements/background.png) no-repeat 0 0/100%;
-  background-size: 100%;
+  background: url(../../Elements/Батончики\ main.png) no-repeat 85% 50%/40%, url(../../Elements/background.png) no-repeat 0 0/100%;
   display: flex;
   justify-content: space-between; }
 
 .why {
-  background: url(../../Elements/лист.png) no-repeat;
+  background: url(../../Elements/узор\ лист.png) no-repeat;
   background-position-x: 0;
   background-position-y: 50%;
   position: relative;
@@ -84,12 +83,13 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center; }
   .header__container .contact__phone {
+    font-family: 'Alegreya Sans', helvetica, sans-serif;
     display: flex;
     align-items: center;
     color: #fff;
-    font-family: 'Alegreya Sans', Arial, Helvetica, serif;
     text-decoration: none;
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 24px; }
   .header__container .contact__phone::before {
     content: '';
     width: 12px;
@@ -175,13 +175,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
 .whychoco__container .whychoco__item:before {
   content: '';
+  background-image: url(../../Elements/точки.png);
+  background-repeat: no-repeat;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  width: 70px;
+  height: 20px;
   top: 55px;
-  right: -30px;
-  background-color: red;
+  right: -60px;
   display: inline-block;
   text-align: center; }
 .whychoco__container .whychoco__pic {
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #8f8f8f; }
 
 .feedback__wrapper {
-  background: url("/Elements/Прямоугольник 11 kопировать 3.png");
+  background: url("../../Elements/Прямоугольник 11 kопировать 3.png");
   background-repeat: no-repeat;
   padding: 52px 48px;
   display: flex; }
