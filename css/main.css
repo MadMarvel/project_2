@@ -43,9 +43,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px; }
 
 .promo {
-  background: url(../../Elements/Choco_main.png) no-repeat 85% 50%/40%, url(../../Elements/background.png) no-repeat 0 0/100%;
+  background: url(../../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../../Elements/Choco_main.png) no-repeat 85% 50%/40%, url(../../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../../Elements/Лист3_1sec.png) no-repeat 5% 106%, url(../../Elements/background.png) no-repeat 0 0/100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
+  .promo:after {
+    content: '';
+    position: absolute;
+    background: url(../../Elements/Лист_1sec.png); }
 
 .why {
   background: url(../../Elements/узор_лист.png) no-repeat;
@@ -269,26 +274,45 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: flex-end;
   position: relative; }
+  .options__item:hover .options__content-wrap {
+    width: 540px; }
+  .options__item:hover .options__trigger-text {
+    color: #8f8f8f; }
   .options__title {
     position: absolute;
     top: 100px;
     left: 80px;
     font-weight: bold; }
   .options__list, .options__item {
-    height: 100%; }
-  .options__item {
+    height: 100%;
     display: flex; }
   .options__trigger {
+    position: relative;
     width: 80px;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none; }
+    .options__trigger-text {
+      display: flex;
+      align-items: center;
+      transform: rotate(-90deg);
+      white-space: nowrap;
+      font-size: 48px;
+      color: #fff;
+      transform-origin: 0 0;
+      height: 80px; }
   .options__content-wrap {
-    max-width: 540px; }
+    width: 0px;
+    transition: .5s;
+    overflow: hidden; }
   .options__content {
     padding: 25px 50px;
     background: rgba(53, 54, 54, 0.93);
     height: 100%;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    min-width: 540px; }
   .options__desc {
     font-family: 'Alegreya Sans', helvetica, sans-serif;
     font-weight: 500;
