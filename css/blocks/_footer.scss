@@ -1,0 +1,39 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 93px;
+  background-color: $white;
+  bottom: 0px;
+  display: flex;
+  &__container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__socials{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__socials-list{
+    display: flex;
+  }
+  &__socials-item{
+    margin: 0px 10px;
+  }
+}
+.contact {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  &__address{
+    @include Alegreya();
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0 0;
+  }
+}
+.contact__phone {
+  color: $green;
+}

@@ -46,3 +46,23 @@ ul li {
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }
+
+.contact__phone {
+  @include Alegreya();
+  display: flex;
+  align-items: center;
+  color: $white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  &:before  {
+    content: '';
+    width: 12px;
+    height: 11px;
+    background-image: url(../Elements/phone\ .png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 6px;
+  }
+}

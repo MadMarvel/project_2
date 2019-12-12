@@ -1,0 +1,6 @@
+.map {
+  @include bg-image ('../../Elements/Map.png', cover);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}

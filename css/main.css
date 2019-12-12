@@ -42,6 +42,24 @@ ul li {
 h1, h2, h3, h4, h5, h6 {
   margin: 0px; }
 
+.contact__phone {
+  font-family: 'Alegreya Sans', helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px; }
+  .contact__phone:before {
+    content: '';
+    width: 12px;
+    height: 11px;
+    background-image: url(../Elements/phone\ .png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 6px; }
+
 .promo {
   background: url(../../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../../Elements/Choco_main.png) no-repeat 85% 50%/40%, url(../../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../../Elements/Лист3_1sec.png) no-repeat 5% 106%, url(../../Elements/background.png) no-repeat 0 0/100%;
   display: flex;
@@ -87,23 +105,6 @@ h1, h2, h3, h4, h5, h6 {
   .header__container .contact {
     display: flex;
     align-items: center; }
-  .header__container .contact__phone {
-    font-family: 'Alegreya Sans', helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 24px; }
-  .header__container .contact__phone::before {
-    content: '';
-    width: 12px;
-    height: 11px;
-    background-image: url(../Elements/phone\ .png);
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-right: 6px; }
 
 .naturchoco__container {
   width: 410px;
@@ -318,5 +319,47 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-size: 16px;
     color: #fff; }
+
+.map {
+  background-image: url("../../Elements/Map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative; }
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 93px;
+  background-color: #fff;
+  bottom: 0px;
+  display: flex; }
+  .footer__container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto; }
+  .footer__socials {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .footer__socials-list {
+    display: flex; }
+  .footer__socials-item {
+    margin: 0px 10px; }
+
+.contact {
+  width: 50%;
+  display: flex;
+  align-items: center; }
+  .contact__address {
+    font-family: 'Alegreya Sans', helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0 0; }
+
+.contact__phone {
+  color: #0f5a47; }
 
 /*# sourceMappingURL=main.css.map */
