@@ -1,18 +1,15 @@
 .naturchoco__container  {
   width: 410px;
-  height: 330px;
   color: $white;
   margin-top: 85px;
+  margin-left: -34.375rem;
 
   .naturchoco__title  {
-    @include Alegreya();
-    text-transform: uppercase;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
   }
 
   .naturchoco__text {
-    @include Alegreya();
     font-size: 21px;
     margin-bottom: 51px;
   }

@@ -8,4 +8,8 @@
   @include Alegreya();
   font-size: 19px;
   font-weight: 800;
+  &__green {
+    background-color: $green;
+    color: $white;
+  }
 }

@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 .body {
   line-height: 1.42;
 }
@@ -14,12 +18,13 @@
 }
 
 .container  {
-  width: 940px;
+  width: auto; max-width: 940px;
   margin: 0 auto;
   line-height: 1.42;
 }
 
 .section {
+  @include Alegreya();
   height: 100vh;
   min-height: 650px;
   display: flex;
@@ -28,8 +33,7 @@
 }
 
 .title {
-  @include Alegreya();
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -48,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact__phone {
-  @include Alegreya();
   display: flex;
   align-items: center;
   color: $white;
@@ -65,4 +68,16 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center center;
     margin-right: 6px;
   }
+}
+
+@media (max-width: 768px) {
+  html {font-size: 13px;}
+  .container {max-width: 450px;}
+  .header__container {display: none;}
+}
+
+@media (max-width: 480px) {
+  html {font-size: 12px;}
+  .container {max-width: 300px;}
+  .header__container {display: none;}
 }

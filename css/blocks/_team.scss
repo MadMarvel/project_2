@@ -1,21 +1,34 @@
-.team__title {
+.team {
+  &__title {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.team__list {
-  display: flex;
-  justify-content: space-around;
-}
-.team__item {
-  display: inline-block;
-  align-items: center;
-}
-.team__item:nth-child(2n+2) {
-  margin-top: 40px;
-}
-.team__name {
-  text-align: center;
-  @include Alegreya ();
-  font-weight: 500;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    align-items: center;
+    width: calc(100% / 4 - 20px);
+  }
+  &__item:hover {
+    .team__content-wrap {
+      height: 70px;
+    }
+    .team__trigger {
+      color: $green;
+    }
+  }
+  &__name {
+    text-align: center;
+    font-weight: 500;
+  }
+  &__trigger {
+    text-decoration: none;
+  }
+  &__content-wrap {
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+  }
 }

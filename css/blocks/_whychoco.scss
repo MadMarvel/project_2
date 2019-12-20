@@ -1,16 +1,11 @@
 .whychoco__container  {
   .whychoco__title {
-    @include Alegreya();
-    font-weight: bold;
-    font-size: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
   }
 
   .whychoco__text {
-    @include Alegreya();
     font-size: 18px;
     font-weight: 400;
     color: $grey;
@@ -24,7 +19,6 @@
   .whychoco__list {
     display: flex;
     justify-content: space-around;
-    @include Alegreya();
   }
 
   .whychoco__item {
@@ -44,7 +38,7 @@
     width: 70px;
     height: 20px;
     top: 55px;
-    right: -60px;
+    right: -35px;
     display: inline-block;
     text-align: center;
   }

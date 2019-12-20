@@ -8,6 +8,7 @@ $grey_light: #f2f5f4;
 //mixins
 @import '../css/blocks/mixins';
 
+
 //normalize
 @import './layout/normalize.css';
 @import './main.css';
@@ -28,3 +29,6 @@ $grey_light: #f2f5f4;
 @import './blocks/options';
 @import './blocks/map';
 @import './blocks/footer';
+@import './blocks/form';
+@import './blocks/reset';
+@import './blocks/option';

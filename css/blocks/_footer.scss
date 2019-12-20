@@ -7,11 +7,11 @@
   display: flex;
   &__container {
     display: flex;
-    width: 80%;
+    width: 940px;
     margin: 0 auto;
   }
   &__socials{
-    width: 50%;
+    width: 470px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -23,17 +23,19 @@
     margin: 0px 10px;
   }
 }
-.contact {
-  width: 50%;
+.footer__contact {
+  width: 470px;
   display: flex;
   align-items: center;
-  &__address{
-    @include Alegreya();
+  &-address{
     font-weight: 500;
     font-size: 21px;
     margin: 0 0;
   }
-}
-.contact__phone {
-  color: $green;
+  &-phone {
+    color: $green;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+  }
 }

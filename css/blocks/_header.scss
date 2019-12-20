@@ -13,13 +13,12 @@
   .navigation__item {
     margin: auto 15px;
     color: $white;
-    font-family: 'Alegreya Sans', Arial, Helvetica, serif;
+    @include Alegreya();
     font-weight: 400;
   }
 
   .contact {
     display: flex;
     align-items: center;
-
   }
 }
