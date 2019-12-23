@@ -1,10 +1,19 @@
 .feedback {
+  &__container {
+    width: 65%;
+    margin: 0 auto;
+  }
   &__photo-item{
   background: url('../Elements/Прямоугольник\ 11\ kопировать\ 3.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: rem(52px) rem(48px);
   display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__title {
     text-align: center;
@@ -22,11 +31,20 @@
     font-weight: 400;
     font-size: rem(18px);
     color: $grey;
+    
+    @include tablets {
+      width: 100%;
+    }
   }
   &__text-signature {
     font-weight: 500;
     font-size: rem(18px);
     color: $grey;
+  }
+  &__text-wrapper {
+    @include tablets {
+      text-align: center;
+    }
   }
   &__list {
     display: flex;

@@ -3,26 +3,54 @@
     display: flex;
 
     @include tablets {
-      flex-direction: column;
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 0 15%;
+      line-height: 1;
     }
   }
   &__left  {
+    width: 50%;
     width: rem(410px);
     color: $white;
     margin-top: rem(85px);
+
+    @include tablets {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  &__right {
+    width: 50%;
+    margin-left: rem(100px);
+
+    @include tablets {
+      width: 100%;
+      margin-left: 0px;
+    }
   }
   &__title  {
     font-size: 3.75rem;
     font-weight: 700;
+
+    @include tablets {
+      margin: 0 0;
+    }
   }
   &__text {
     font-size: rem(21px);
     margin-bottom: rem(51px);
+    width: rem(400px);
+
+    @include tablets {
+      padding: 0 rem(80px);
+    }
   }
-  &__right {
-    width: 50%;
-  }
-  &__left {
-    width: 50%;
+  &__pic {
+    width: 700px;
+
+    @include tablets {
+    width: 450px;
+    }
   }
 }

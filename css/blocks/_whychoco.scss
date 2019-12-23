@@ -19,6 +19,10 @@
   .whychoco__list {
     display: flex;
     justify-content: space-around;
+    
+    @include tablets {
+      flex-direction: column;
+    }
   }
 
   .whychoco__item {
@@ -28,6 +32,10 @@
     align-items: center;
     margin-top: rem(88px);
     position: relative;
+
+    @include tablets {
+      margin: 0 0;
+    }
   }
 
   .whychoco__item:before {
@@ -60,6 +68,10 @@
   .whychoco__title-pic {
     margin-top: rem(65px);
     font-size: rem(27px);
+
+    @include tablets {
+      margin-top: 30px;
+    }
   }
 
   .whychoco__text-pic {
@@ -67,5 +79,9 @@
     font-size: rem(14px);
     font-weight: 300;
     color: $grey;
+
+    @include tablets {
+      width: rem(360px);
+    }
   }
 }

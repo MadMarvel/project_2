@@ -2,6 +2,10 @@
   color: $white;
   margin-bottom: rem(47px);
   margin-top: rem(85px);
+
+  @include tablets {
+    margin-top: rem(50px);
+  }
   &__list {
     display: flex;
   }
@@ -14,5 +18,9 @@
   }
   &__text {
     margin-right: rem(15px);
+
+    @include tablets {
+      text-align: start;
+    }
   }
 }

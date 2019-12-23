@@ -6,10 +6,10 @@ html {
   font-size: 16px; }
   @media screen and (max-width: 768px) {
     html {
-      font-size: 15px; } }
+      font-size: 14px; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .body {
   line-height: 1.42; }
@@ -133,21 +133,44 @@ h1, h2, h3, h4, h5, h6 {
   display: flex; }
   @media screen and (max-width: 768px) {
     .naturchoco__container {
-      flex-direction: column; } }
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 0 15%;
+      line-height: 1; } }
 .naturchoco__left {
+  width: 50%;
   width: 25.625rem;
   color: #fff;
   margin-top: 5.3125rem; }
+  @media screen and (max-width: 768px) {
+    .naturchoco__left {
+      width: 100%;
+      margin-top: 0; } }
+.naturchoco__right {
+  width: 50%;
+  margin-left: 6.25rem; }
+  @media screen and (max-width: 768px) {
+    .naturchoco__right {
+      width: 100%;
+      margin-left: 0px; } }
 .naturchoco__title {
   font-size: 3.75rem;
   font-weight: 700; }
+  @media screen and (max-width: 768px) {
+    .naturchoco__title {
+      margin: 0 0; } }
 .naturchoco__text {
   font-size: 1.3125rem;
-  margin-bottom: 3.1875rem; }
-.naturchoco__right {
-  width: 50%; }
-.naturchoco__left {
-  width: 50%; }
+  margin-bottom: 3.1875rem;
+  width: 25rem; }
+  @media screen and (max-width: 768px) {
+    .naturchoco__text {
+      padding: 0 5rem; } }
+.naturchoco__pic {
+  width: 700px; }
+  @media screen and (max-width: 768px) {
+    .naturchoco__pic {
+      width: 450px; } }
 
 .btn {
   padding: 1.25rem 2.125rem;
@@ -167,6 +190,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 2.9375rem;
   margin-top: 5.3125rem; }
+  @media screen and (max-width: 768px) {
+    .specification {
+      margin-top: 3.125rem; } }
   .specification__list {
     display: flex; }
   .specification__item {
@@ -176,6 +202,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0.3125rem; }
   .specification__text {
     margin-right: 0.9375rem; }
+    @media screen and (max-width: 768px) {
+      .specification__text {
+        text-align: start; } }
 
 .whychoco__container .whychoco__title {
   display: flex;
@@ -193,6 +222,9 @@ h1, h2, h3, h4, h5, h6 {
 .whychoco__container .whychoco__list {
   display: flex;
   justify-content: space-around; }
+  @media screen and (max-width: 768px) {
+    .whychoco__container .whychoco__list {
+      flex-direction: column; } }
 .whychoco__container .whychoco__item {
   display: flex;
   flex-direction: column;
@@ -200,6 +232,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin-top: 5.5rem;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .whychoco__container .whychoco__item {
+      margin: 0 0; } }
 .whychoco__container .whychoco__item:before {
   content: '';
   background-image: url(../../Elements/точки.png);
@@ -224,18 +259,31 @@ h1, h2, h3, h4, h5, h6 {
 .whychoco__container .whychoco__title-pic {
   margin-top: 4.0625rem;
   font-size: 1.6875rem; }
+  @media screen and (max-width: 768px) {
+    .whychoco__container .whychoco__title-pic {
+      margin-top: 30px; } }
 .whychoco__container .whychoco__text-pic {
   width: 16.25rem;
   font-size: 0.875rem;
   font-weight: 300;
   color: #8f8f8f; }
+  @media screen and (max-width: 768px) {
+    .whychoco__container .whychoco__text-pic {
+      width: 22.5rem; } }
 
+.feedback__container {
+  width: 65%;
+  margin: 0 auto; }
 .feedback__photo-item {
   background: url("../Elements/Прямоугольник 11 kопировать 3.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3.25rem 3rem;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .feedback__photo-item {
+      flex-direction: column;
+      align-items: center; } }
 .feedback__title {
   text-align: center;
   margin-bottom: 5rem; }
@@ -249,10 +297,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-size: 1.125rem;
   color: #8f8f8f; }
+  @media screen and (max-width: 768px) {
+    .feedback__text-img {
+      width: 100%; } }
 .feedback__text-signature {
   font-weight: 500;
   font-size: 1.125rem;
   color: #8f8f8f; }
+@media screen and (max-width: 768px) {
+  .feedback__text-wrapper {
+    text-align: center; } }
 .feedback__list {
   display: flex;
   justify-content: center;
@@ -261,19 +315,27 @@ h1, h2, h3, h4, h5, h6 {
 .feedback__item {
   margin-right: 1.5625rem; }
 
+@media screen and (max-width: 768px) {
+  .team__container {
+    width: 80%;
+    margin: 0 auto; } }
 .team__title {
   text-align: center;
   margin-bottom: 2.5rem; }
 .team__list {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 .team__item {
   align-items: center;
   text-align: center;
-  height: 25rem;
+  height: 28.125rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .team__item {
+      width: 50%; } }
 .team__item:hover .team__content-wrap {
   height: 4.375rem; }
 .team__item:hover .team__trigger {
@@ -281,12 +343,17 @@ h1, h2, h3, h4, h5, h6 {
 .team__name {
   text-align: center;
   font-weight: 500; }
+  @media screen and (max-width: 768px) {
+    .team__name {
+      margin-top: 15px; } }
 .team__trigger {
   text-decoration: none; }
-.team__content-wrap {
-  height: 0rem;
-  overflow: hidden;
-  transition: .5s; }
+.team__content {
+  padding: 0 20px; }
+  .team__content-wrap {
+    height: 0rem;
+    overflow: hidden;
+    transition: .5s; }
 
 .options {
   background-image: url("../../Elements/Background__options.png");
