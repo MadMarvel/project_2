@@ -43,6 +43,10 @@
     text-align: center;
   }
 
+  .whychoco__item:last-child:before {
+    display: none;
+  }
+
   .whychoco__pic {
     display: flex;
     justify-content: center;
