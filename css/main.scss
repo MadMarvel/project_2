@@ -8,13 +8,13 @@ $grey_light: #f2f5f4;
 //mixins
 @import '../css/blocks/mixins';
 
-
 //normalize
 @import './layout/normalize.css';
 @import './main.css';
 
 //setups
 @import './layout/fonts';
+@import './layout/media';
 
 //blocks
 @import './layout/base';
@@ -32,15 +32,4 @@ $grey_light: #f2f5f4;
 @import './blocks/form';
 @import './blocks/reset';
 @import './blocks/option';
-
-@media (max-width: 768px) {
-  html {font-size: 13px;}
-  .container {max-width: 450px;}
-  .header__container {display: none;}
-}
-
-@media (max-width: 480px) {
-  html {font-size: 12px;}
-  .container {max-width: 300px;}
-  .header__container {display: none;}
-}
+@import './blocks/hamburger';

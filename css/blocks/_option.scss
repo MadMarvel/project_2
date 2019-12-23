@@ -1,11 +1,10 @@
 .option {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   &__radio {
-    margin: 5px 10px;
+    margin: rem(5px) rem(10px);
   }
   &__checkbox {
-    margin: 5px 10px;
+    margin: rem(5px) rem(10px);
   }
 }

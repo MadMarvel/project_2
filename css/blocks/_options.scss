@@ -6,7 +6,7 @@
   position: relative;
   &__item:hover {
     .options__content-wrap{
-      width: 540px;
+      width: rem(540px);
     }
     .options__trigger-text {
       color: $grey;
@@ -24,7 +24,7 @@
   }
   &__trigger {
     position: relative;
-    width: 80px;
+    width: rem(80px);
     background-size: cover;
     background-repeat: no-repeat; 
     display: flex;
@@ -35,27 +35,27 @@
       align-items: center;
       transform: rotate(-90deg);
       white-space: nowrap;
-      font-size: 48px;
+      font-size: rem(48px);
       color: $white;
       transform-origin: 0 0;
-      height: 80px;
+      height: rem(80px);
     }
   }
   &__content-wrap {
-    width: 0px;
+    width: rem(0px);
     transition: .5s;
     overflow: hidden;
   }
   &__content {
-    padding: 25px 50px;
+    padding: rem(25px) rem(50px);
     background: rgba(#353636, .93);
     height: 100%;
     box-sizing: border-box;
-    min-width: 540px;
+    min-width: rem(540px);
   }
   &__desc {
     font-weight: 500;
-    font-size: 16px;
+    font-size: rem(16px);
     color: $white;
   }
 }

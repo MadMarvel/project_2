@@ -1,17 +1,28 @@
-.naturchoco__container  {
-  width: 410px;
-  color: $white;
-  margin-top: 85px;
-  margin-left: -34.375rem;
+.naturchoco {
+  &__container {
+    display: flex;
 
-  .naturchoco__title  {
+    @include tablets {
+      flex-direction: column;
+    }
+  }
+  &__left  {
+    width: rem(410px);
+    color: $white;
+    margin-top: rem(85px);
+  }
+  &__title  {
     font-size: 3.75rem;
     font-weight: 700;
   }
-
-  .naturchoco__text {
-    font-size: 21px;
-    margin-bottom: 51px;
+  &__text {
+    font-size: rem(21px);
+    margin-bottom: rem(51px);
+  }
+  &__right {
+    width: 50%;
+  }
+  &__left {
+    width: 50%;
   }
 }
-

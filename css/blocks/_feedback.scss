@@ -1,38 +1,40 @@
 .feedback {
   &__photo-item{
-  background: url('../../Elements/Прямоугольник\ 11\ kопировать\ 3.png');
+  background: url('../Elements/Прямоугольник\ 11\ kопировать\ 3.png');
   background-repeat: no-repeat;
-  padding: 52px 48px;
+  background-size: cover;
+  padding: rem(52px) rem(48px);
   display: flex;
   }
   &__title {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: rem(80px);
   }
   &__img {
-    margin-right: 20px;
+    margin-right: rem(20px);
   }
   &__title-img {
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: 500;
   }
   &__text-img {
     width: 80%;
     font-weight: 400;
-    font-size: 18px;
+    font-size: rem(18px);
     color: $grey;
   }
   &__text-signature {
     font-weight: 500;
-    font-size: 18px;
+    font-size: rem(18px);
     color: $grey;
   }
   &__list {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: rem(30px);
   }
   &__item {
-    margin-right: 25px;
+    margin-right: rem(25px);
   }
 }

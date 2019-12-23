@@ -1,12 +1,12 @@
 .btn  {
-  padding: 20px 34px;
-  border-radius: 30px;
+  padding: rem(20px) rem(34px);
+  border-radius: rem(30px);
   background-color: $white;
   text-transform: uppercase;
   text-decoration: none;
   color: $green;
   @include Alegreya();
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: 800;
   &__green {
     background-color: $green;
