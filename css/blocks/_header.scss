@@ -1,17 +1,20 @@
 .header__container  {
-  height: 45px;
-  width: 940px;
+  height: rem(45px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 22px;
+  margin-top: rem(22px);
 
   .navigation__box  {
     display: flex;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   .navigation__item {
-    margin: auto 15px;
+    margin: auto rem(15px);
     color: $white;
     @include Alegreya();
     font-weight: 400;
@@ -20,5 +23,9 @@
   .contact {
     display: flex;
     align-items: center;
+
+    @include tablets {
+      display: none;
+    }
   }
 }

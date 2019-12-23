@@ -1,23 +1,23 @@
 .promo {
-  background: url(../../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../../Elements/Choco_main.png) no-repeat 85% 50% / 40%, url(../../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../../Elements/background.png) no-repeat 0 0 / 100%;
+  background: url(../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../Elements/background.png) no-repeat 0 0 / cover;
   display: flex;
   justify-content: space-between;
   z-index: 1;
   &:after {
     content: '';
     position: absolute;
-    background: url(../../Elements/Лист3_1sec.png);
-    width: 400px;
-    height: 400px;
+    background: url(../Elements/Лист3_1sec.png);
+    width: rem(400px);
+    height: rem(400px);
     background-repeat: no-repeat;
-    background-position-x: 71px;
-    background-position-y: 85px;
-    bottom: -256px;
+    background-position-x: rem(71px);
+    background-position-y: rem(85px);
+    bottom: rem(-256px);
   }
 }
 
 .why  {
-  background: url(../../Elements/узор_лист.png) no-repeat;
+  background: url(../Elements/узор_лист.png) no-repeat;
   background-position-x: 0;
   background-position-y: 50%;
   position: relative;
@@ -27,15 +27,15 @@
 .why:after {
   content: '';
   position: absolute;
-  bottom: -140px;
-  width: 230px;
-  height: 330px;
-  background: url(../../Elements/малина.png);
+  bottom: rem(-140px);
+  width: rem(230px);
+  height: rem(330px);
+  background: url(../Elements/малина.png);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 100;
 }
 
 .form {
-  background: url(../../Elements/лист_form.png) no-repeat 100% 75%, url(../../Elements/ягода_form.png) no-repeat 6% 75%, url(../../Elements/фон_form.png) no-repeat 0 0 / 100%;
+  background: url(../Elements/лист_form.png) no-repeat 100% 75%, url(../Elements/ягода_form.png) no-repeat 6% 75%, url(../Elements/фон_form.png) no-repeat 0 0 / 100%;
 }

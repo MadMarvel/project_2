@@ -6,10 +6,10 @@
   }
 
   .whychoco__text {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
     color: $grey;
-    width: 500px;
+    width: rem(500px);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -26,7 +26,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-top: 88px;
+    margin-top: rem(88px);
     position: relative;
   }
 
@@ -35,32 +35,36 @@
     background-image: url(../../Elements/точки.png);
     background-repeat: no-repeat;
     position: absolute;
-    width: 70px;
-    height: 20px;
-    top: 55px;
-    right: -35px;
+    width: rem(70px);
+    height: rem(20px);
+    top: rem(55px);
+    right: rem(-105px);
     display: inline-block;
     text-align: center;
+  }
+
+  .whychoco__item:last-child:before {
+    display: none;
   }
 
   .whychoco__pic {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 125px;
-    height: 125px;
+    width: rem(125px);
+    height: rem(125px);
     border-radius: 50%;
     background-color: $grey_light;
   }
 
   .whychoco__title-pic {
-    margin-top: 65px;
-    font-size: 27px;
+    margin-top: rem(65px);
+    font-size: rem(27px);
   }
 
   .whychoco__text-pic {
-    width: 260px;
-    font-size: 14px;
+    width: rem(260px);
+    font-size: rem(14px);
     font-weight: 300;
     color: $grey;
   }

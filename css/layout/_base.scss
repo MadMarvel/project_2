@@ -1,5 +1,12 @@
 html {
   font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 .body {
@@ -8,7 +15,7 @@ html {
 
 .wrapper  {
   overflow: hidden;
-  min-width: 1100px;
+  width: 100%;
   min-height: 100%;
   display: flex;
 }
@@ -18,7 +25,8 @@ html {
 }
 
 .container  {
-  width: auto; max-width: 940px;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
   line-height: 1.42;
 }
@@ -68,16 +76,4 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center center;
     margin-right: 6px;
   }
-}
-
-@media (max-width: 768px) {
-  html {font-size: 13px;}
-  .container {max-width: 450px;}
-  .header__container {display: none;}
-}
-
-@media (max-width: 480px) {
-  html {font-size: 12px;}
-  .container {max-width: 300px;}
-  .header__container {display: none;}
 }

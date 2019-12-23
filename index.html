@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/layout/normalize.css">
   <title>Chocco</title>
@@ -12,8 +12,8 @@
   <div class="wrapper">
     <div class="wrapper__content">
       <section class="section promo">
-        <header class="header">
-          <div class="container">
+        <div class="container">
+          <header class="header">
             <div class="header__container">
               <a href="#" class="logo">
                 <img src="./Elements/logo.png" alt="" class="logo__img">
@@ -46,47 +46,51 @@
               <div class="contact">
                 <a href="tel:+78009039090" class="contact__phone">8 800 903 90 90</a>
               </div>
-            </div>
-          </div>
-        </header>
-        <div class="container">
-          <div class="naturchoco__container">
-            <div class="title">
-              <h1 class="naturchoco__title">Натуральные шоколадные батончики</h1>
-            </div>
-            <div class="naturchoco__text">
-              <p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-            </div>  
-            <span class="naturchoco__btn">
-              <a href="#" class="btn">заказать</a>
-            </span>
-            <div class="specification">
-              <div class="container">
-                <div class="specification__container">
-                  <ul class="specification__list">
-                    <li class="specification__item">
-                      <div class="specification__icon">
-                        <img src="./Elements/Иконка Листики.png">
-                      </div>  
-                      <div class="specification__text">100% натуральный продукт</div>
-                    </li>
-                    <li class="specification__item">
-                      <div class="specification__icon">
-                        <img src="./Elements/иконка доставка.png" alt="" class="specification__icon">
-                      </div>  
-                      <div class="specification__text">3-5 дней доставка по РФ</div>
-                    </li>
-                    <li class="specification__item">
-                      <div class="specification__icon">
-                        <img src="./Elements/Иконка фигура.png" alt="" class="specification__icon">
-                      </div>  
-                      <div class="specification__text">Не портит фигуру</div>
-                    </li>
-                  </ul>
+              <div class="hamburger">
+                <div class="hamburger__menu">
+                  <a href="#" class="hamburger__menu-link">123</a>
                 </div>
+              </div>  
+            </div>
+          </header>
+          <div class="naturchoco__container">
+            <div class="naturchoco__left">
+              <div class="title">
+                <h1 class="naturchoco__title">Натуральные шоколадные батончики</h1>
               </div>
-            </div> 
-          </div>   
+              <div class="naturchoco__text">
+                <p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
+              </div>  
+              <span class="naturchoco__btn">
+                <a href="#" class="btn">заказать</a>
+              </span>
+              <div class="specification">
+                <ul class="specification__list">
+                  <li class="specification__item">
+                    <div class="specification__icon">
+                      <img src="./Elements/Иконка Листики.png">
+                    </div>  
+                    <div class="specification__text">100% натуральный продукт</div>
+                  </li>
+                  <li class="specification__item">
+                    <div class="specification__icon">
+                      <img src="./Elements/иконка доставка.png" alt="" class="specification__icon">
+                    </div>  
+                    <div class="specification__text">3-5 дней доставка по РФ</div>
+                  </li>
+                  <li class="specification__item">
+                    <div class="specification__icon">
+                      <img src="./Elements/Иконка фигура.png" alt="" class="specification__icon">
+                    </div>  
+                    <div class="specification__text">Не портит фигуру</div>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+            <div class="naturchoco__right">
+              <img src="../elements/батончики.png" alt="" class="naturchoco__pic">
+            </div>
+          </div>  
         </div>  
       </section>
     </div>
@@ -308,11 +312,13 @@
                       <input type="radio" class="option__radio"></input>
                       <div class="option__title">Оплата по карте</div>
                     </label>
+                  </div>  
+                  <div class="checkbox__type">
                     <label class="option">
                       <input type="checkbox" class="option__checkbox">
                       <div class="option__title">Не перезванивать</div>
                     </label>
-                  </div>
+                  </div>  
                 </div>
             </div>
             <div class="form__btn">

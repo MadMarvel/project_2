@@ -1,23 +1,18 @@
 .specification {
-  margin-bottom: 47px;
-}
-
-.specification__container {
-  margin-top: 80px;
-  width: 466px;
-  .specification__list {
+  color: $white;
+  margin-bottom: rem(47px);
+  margin-top: rem(85px);
+  &__list {
     display: flex;
-    justify-content: space-between;
-    .specification__item  {
-      width: 121px;
-      display: flex;
-      color: $white;
-      .specification__icon {
-        margin-right: 10px;
-      }
-      .specification__text {
-        @include Alegreya ();
-      }
-    }
+  }
+  &__item {
+    display: flex;
+    margin-right: rem(5px);
+  }
+  &__icon {
+    margin-right: rem(5px);
+  }
+  &__text {
+    margin-right: rem(15px);
   }
 }
