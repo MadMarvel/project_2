@@ -278,9 +278,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 65%;
   margin: 0 auto; }
 .feedback__photo-item {
-  background: url("../Elements/Прямоугольник 11 kопировать 3.png");
+  background: url("../Elements/Прямоугольник 11 kопировать 3.png") right top, #8f8f8f;
   background-repeat: no-repeat;
-  background-size: cover;
   padding: 3.25rem 3rem;
   display: flex; }
   @media screen and (max-width: 768px) {
