@@ -12,7 +12,10 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
+    @include tablets {
+      flex-wrap: wrap;
+    }
   }
   &__item {
     align-items: center;

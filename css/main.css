@@ -327,8 +327,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2.5rem; }
 .team__list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .team__list {
+      flex-wrap: wrap; } }
 .team__item {
   align-items: center;
   text-align: center;
