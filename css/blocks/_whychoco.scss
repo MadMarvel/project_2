@@ -49,6 +49,10 @@
     right: rem(-105px);
     display: inline-block;
     text-align: center;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   .whychoco__item:last-child:before {

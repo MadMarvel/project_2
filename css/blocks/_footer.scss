@@ -9,12 +9,20 @@
     display: flex;
     width: rem(940px);
     margin: 0 auto;
+
+    @include tablets {
+      padding: 0 15px;
+    }
   }
   &__socials{
     width: rem(470px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @include tablets {
+      width: 50%;
+    }
   }
   &__socials-list{
     display: flex;
@@ -27,6 +35,10 @@
   width: rem(470px);
   display: flex;
   align-items: center;
+
+  @include tablets {
+    width: 50%;
+  }
   &-address{
     font-weight: 500;
     font-size: rem(21px);
