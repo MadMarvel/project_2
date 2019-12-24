@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0 0; } }
 .whychoco__container .whychoco__item:before {
   content: '';
-  background-image: url(../../Elements/точки.png);
+  background-image: url(../Elements/точки.png);
   background-repeat: no-repeat;
   position: absolute;
   width: 4.375rem;
@@ -413,11 +413,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff; }
 
 .map {
-  background-image: url("../../Elements/Map.png");
+  background-image: url("../Elements/Map.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
   position: relative; }
 
 .footer {
