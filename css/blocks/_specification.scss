@@ -1,11 +1,16 @@
 .specification {
   color: $white;
   margin-bottom: rem(47px);
-  margin-top: rem(85px);
+  margin-top: rem(95px);
 
   @include tablets {
-    margin-top: rem(50px);
+    margin-top: rem(75px);
   }
+
+  @include phones {
+    margin-top: rem(128px);
+  }
+
   &__list {
     display: flex;
   }

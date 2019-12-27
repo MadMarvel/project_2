@@ -36,11 +36,15 @@
     @include tablets {
       margin: 0 0;
     }
+
+    @include phones {
+      
+    }
   }
 
   .whychoco__item:before {
     content: '';
-    background-image: url(../Elements/точки.png);
+    background-image: url(../icons/dots_whysection.png);
     background-repeat: no-repeat;
     position: absolute;
     width: rem(70px);
@@ -67,6 +71,10 @@
     height: rem(125px);
     border-radius: 50%;
     background-color: $grey_light;
+
+    @include tablets {
+      margin-top: rem(10px);
+    }
   }
 
   .whychoco__title-pic {
@@ -85,7 +93,7 @@
     color: $grey;
 
     @include tablets {
-      width: rem(360px);
+      width: rem(400px);
     }
   }
 }

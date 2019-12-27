@@ -1,5 +1,5 @@
 .options {
-  @include bg-image ('../../Elements/Background__options.png', cover);
+  @include bg-image ('../icons/Background__options.png', cover);
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -17,6 +17,7 @@
     top: 6.25rem;
     left: 5rem;
     font-weight: bold;
+    color: $white;
   }
   &__list, &__item {
     height: 100%;

@@ -40,6 +40,10 @@
         border: rem(1px) solid transparent;
         background: white;
         outline: none;
+
+        @include tablets {
+            height: rem(56px);
+        }
     }
     &__input:focus {
         border-color: green;
@@ -71,6 +75,11 @@
         &-title, &-options {
             font-weight: 500;
             display: flex;
+        }
+        &-options {
+            @include tablets {
+                margin: 20px 0;
+            }
         }
     }
     &__btn {

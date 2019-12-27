@@ -1,12 +1,12 @@
 .promo {
-  background: url(../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../Elements/background.png) no-repeat 0 0 / cover;
+  background: url(../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../pic/background.png) no-repeat 0 0 / cover;
   display: flex;
   justify-content: space-between;
   z-index: 1;
   &:after {
     content: '';
     position: absolute;
-    background: url(../Elements/Лист3_1sec.png);
+    background: url(../pic/list3_1section.png);
     width: rem(400px);
     height: rem(400px);
     background-repeat: no-repeat;
@@ -17,11 +17,23 @@
 }
 
 .why  {
-  background: url(../Elements/узор_лист.png) no-repeat;
+  background: url(../icons/uzor_list.png) no-repeat;
   background-position-x: 0;
   background-position-y: 50%;
   position: relative;
   z-index: 1;
+
+  @include tablets {
+  background: url(../icons/uzor_list.png) no-repeat;
+  background-position-x: 0;
+  background-position-y: 25%;
+  position: relative;
+  z-index: 1;
+  }
+
+  @include phones {
+    background: none;
+  }
 }
 
 .why:after {
@@ -30,12 +42,16 @@
   bottom: rem(-140px);
   width: rem(230px);
   height: rem(330px);
-  background: url(../Elements/малина.png);
+  background: url(../pic/malina.png);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 100;
 }
 
 .form {
-  background: url(../Elements/лист_form.png) no-repeat 100% 75%, url(../Elements/ягода_form.png) no-repeat 6% 75%, url(../Elements/фон_form.png) no-repeat 0 0 / cover;
+  background: url(../pic/list_form.png) no-repeat 100% 75%, url(../pic/yagoda_form.png) no-repeat 6% 75%, url(../pic/bg_form.png) no-repeat 0 0 / cover;
+
+  @include tablets {
+    background: url(../pic/bg_form.png) no-repeat 0 0 / cover;
+  }
 }

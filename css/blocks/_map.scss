@@ -1,5 +1,5 @@
 .map {
-  @include bg-image ('../Elements/Map.png', cover);
+  @include bg-image ('../icons/Map.png', cover);
   background-repeat: no-repeat;
   position: relative;
 }
