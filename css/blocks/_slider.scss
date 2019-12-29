@@ -1,0 +1,39 @@
+.slider {
+    flex-direction: row;
+    &__arrow {
+        display: flex;
+        align-items: center;
+        width: rem(180px);
+    }
+    &__main {
+        display: flex;
+        &-img {
+            display: flex;
+            align-items: center;
+            margin-right: rem(35px);
+        }
+    }
+    &__spec {
+        &-icon {
+            height: rem(200px);
+        }
+        &-title {
+            height: rem(125px);
+        }
+        &-box {
+            &-list {
+            display: flex;
+            height: rem(200px);
+            }
+            &-item {
+                width: 50%;
+                &-btn {
+                    padding: rem(20px);
+                }
+            }
+        }
+        &-price {
+            font-size: rem(50px);
+        }
+    }
+}

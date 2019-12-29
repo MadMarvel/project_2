@@ -1,4 +1,15 @@
+.whychoco {
+  @include phones {
+    height: 700px;
+    display: flex;
+  }
+}
+
 .whychoco__container  {
+
+  @include phones {
+    justify-content: start;
+  }
   .whychoco__title {
     display: flex;
     justify-content: center;
@@ -38,7 +49,14 @@
     }
 
     @include phones {
-      
+      flex-direction: row;
+    }
+  }
+
+  .whychoco__description {
+    @include phones {
+      text-align: left;
+      margin-left: rem(10px);
     }
   }
 
@@ -75,6 +93,13 @@
     @include tablets {
       margin-top: rem(10px);
     }
+
+    @include phones {
+    width: rem(175px);
+    height: rem(175px);
+    border-radius: 50%;
+    background-color: $grey_light;
+    }
   }
 
   .whychoco__title-pic {
@@ -83,6 +108,10 @@
 
     @include tablets {
       margin-top: 30px;
+    }
+
+    @include phones {
+      font-size: rem(33px);
     }
   }
 
@@ -94,6 +123,10 @@
 
     @include tablets {
       width: rem(400px);
+    }
+
+    @include phones {
+      font-size: rem(20px);
     }
   }
 }

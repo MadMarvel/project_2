@@ -13,6 +13,10 @@
     background-position-x: rem(71px);
     background-position-y: rem(85px);
     bottom: rem(-256px);
+
+    @include phones {
+      display: none;
+    }
   }
 }
 
@@ -46,6 +50,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 100;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .form {

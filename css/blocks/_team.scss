@@ -1,8 +1,16 @@
 .team {
+
+  @include phones {
+    justify-content: start;
+  }
   &__container {
     @include tablets {
     width: 71%;
     margin: 0 auto;
+    }
+
+    @include phones {
+      width: 100%;
     }
   }
   &__title {
@@ -28,10 +36,15 @@
     @include tablets {
       width: 50%;
     }
+
+    @include phones {
+      height: auto;
+      width: 45%;
+    }
   }
   &__item:hover {
     .team__content-wrap {
-      height: rem(70px);
+      height: rem(80px);
     }
     .team__trigger {
       color: $green;
@@ -47,6 +60,8 @@
   }
   &__trigger {
     text-decoration: none;
+    color: #000;
+    @include Alegreya()
   }
   &__content {
     padding: 0 20px;
