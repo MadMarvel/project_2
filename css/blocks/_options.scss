@@ -1,5 +1,5 @@
 .options {
-  @include bg-image ('../../Elements/Background__options.png', cover);
+  @include bg-image ('../icons/Background__options.png', cover);
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

@@ -6,7 +6,7 @@ html {
   font-size: 16px; }
   @media screen and (max-width: 768px) {
     html {
-      font-size: 14px; } }
+      font-size: 13px; } }
   @media screen and (max-width: 480px) {
     html {
       font-size: 12px; } }
@@ -70,14 +70,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 6px; }
 
 .promo {
-  background: url(../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../Elements/background.png) no-repeat 0 0/cover;
+  background: url(../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../pic/background.png) no-repeat 0 0/cover;
   display: flex;
   justify-content: space-between;
   z-index: 1; }
   .promo:after {
     content: '';
     position: absolute;
-    background: url(../Elements/Лист3_1sec.png);
+    background: url(../pic/list3_1section.png);
     width: 25rem;
     height: 25rem;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -16rem; }
 
 .why {
-  background: url(../Elements/узор_лист.png) no-repeat;
+  background: url(../icons/uzor_list.png) no-repeat;
   background-position-x: 0;
   background-position-y: 50%;
   position: relative;
@@ -98,13 +98,13 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -8.75rem;
   width: 14.375rem;
   height: 20.625rem;
-  background: url(../Elements/малина.png);
+  background: url(../pic/malina.png);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 100; }
 
 .form {
-  background: url(../Elements/лист_form.png) no-repeat 100% 75%, url(../Elements/ягода_form.png) no-repeat 6% 75%, url(../Elements/фон_form.png) no-repeat 0 0/cover; }
+  background: url(../pic/list_form.png) no-repeat 100% 75%, url(../Elements/ягода_form.png) no-repeat 6% 75%, url(../pic/bg_form.png) no-repeat 0 0/cover; }
 
 .header__container {
   height: 2.8125rem;
@@ -145,7 +145,8 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (max-width: 768px) {
     .naturchoco__left {
       width: 100%;
-      margin-top: 0; } }
+      margin-top: 2.1875rem;
+      line-height: 1.1; } }
 .naturchoco__right {
   width: 50%;
   margin-left: 6.25rem; }
@@ -162,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 .naturchoco__text {
   font-size: 1.3125rem;
   margin-bottom: 3.1875rem;
-  width: 25rem; }
+  width: 28.125rem; }
   @media screen and (max-width: 768px) {
     .naturchoco__text {
       padding: 0 5rem; } }
@@ -170,7 +171,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 700px; }
   @media screen and (max-width: 768px) {
     .naturchoco__pic {
-      width: 450px; } }
+      width: 370px;
+      margin-top: -15px; } }
 
 .btn {
   padding: 1.25rem 2.125rem;
@@ -237,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0 0; } }
 .whychoco__container .whychoco__item:before {
   content: '';
-  background-image: url(../Elements/точки.png);
+  background-image: url(../icons/dots_whysection.png);
   background-repeat: no-repeat;
   position: absolute;
   width: 4.375rem;
@@ -278,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 65%;
   margin: 0 auto; }
 .feedback__photo-item {
-  background: url("../Elements/Прямоугольник 11 kопировать 3.png") right top, #8f8f8f;
+  background: url("../icons/na_zamenu.png") right top, #8f8f8f;
   background-repeat: no-repeat;
   padding: 3.25rem 3rem;
   display: flex; }
@@ -360,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: .5s; }
 
 .options {
-  background-image: url("../../Elements/Background__options.png");
+  background-image: url("../icons/Background__options.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -412,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff; }
 
 .map {
-  background-image: url("../Elements/Map.png");
+  background-image: url("../icons/Map.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
