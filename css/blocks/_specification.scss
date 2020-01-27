@@ -13,6 +13,7 @@
 
   &__list {
     display: flex;
+    justify-content: space-between;
   }
   &__item {
     display: flex;
@@ -23,6 +24,7 @@
   }
   &__text {
     margin-right: rem(15px);
+    width: rem(73px);
 
     @include tablets {
       text-align: start;

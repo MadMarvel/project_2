@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(./layout/normalize.css);
 @import url(./main.css);
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
@@ -63,14 +62,14 @@ h1, h2, h3, h4, h5, h6 {
     content: '';
     width: 12px;
     height: 11px;
-    background-image: url(../Elements/phone\ .png);
+    background-image: url(../../icons/phone.png);
     display: flex;
     background-repeat: no-repeat;
     background-position: center center;
     margin-right: 6px; }
 
 .promo {
-  background: url(../Elements/Лист_1sec.png) no-repeat 90% 70%, url(../Elements/Ягоды_1sec.png) no-repeat 65% 83%, url(../Elements/Ягода2_1sec.png) no-repeat 85% 106%, url(../Elements/Лист2_1sec.png) no-repeat 66% 104%, url(../pic/background.png) no-repeat 0 0/cover;
+  background: url(../../icons/list_1sec.png) no-repeat 90% 70%, url(../../icons/yagoda_1sec.png) no-repeat 65% 83%, url(../../icons/yagoda2_1sec.png) no-repeat 85% 106%, url(../../icons/list2_1sec.png) no-repeat 66% 104%, url(../pic/background.png) no-repeat 0 0/cover;
   display: flex;
   justify-content: space-between;
   z-index: 1; }
@@ -120,14 +119,10 @@ h1, h2, h3, h4, h5, h6 {
       display: none; } }
 
 .form {
-<<<<<<< HEAD
-  background: url(../pic/list_form.png) no-repeat 100% 75%, url(../Elements/ягода_form.png) no-repeat 6% 75%, url(../pic/bg_form.png) no-repeat 0 0/cover; }
-=======
   background: url(../pic/list_form.png) no-repeat 100% 75%, url(../pic/yagoda_form.png) no-repeat 6% 75%, url(../pic/bg_form.png) no-repeat 0 0/cover; }
   @media screen and (max-width: 768px) {
     .form {
       background: url(../pic/bg_form.png) no-repeat 0 0/cover; } }
->>>>>>> bbc864bea9cbc0c4f6b6685f4856170eca7299b7
 
 .header__container {
   height: 2.8125rem;
@@ -153,7 +148,8 @@ h1, h2, h3, h4, h5, h6 {
         display: none; } }
 
 .naturchoco__container {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   @media screen and (max-width: 768px) {
     .naturchoco__container {
       flex-direction: column-reverse;
@@ -165,7 +161,6 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 0; } }
 .naturchoco__left {
   width: 50%;
-  width: 25.625rem;
   color: #fff;
   margin-top: 5.3125rem; }
   @media screen and (max-width: 768px) {
@@ -174,8 +169,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 2.1875rem;
       line-height: 1.1; } }
 .naturchoco__right {
-  width: 50%;
-  margin-left: 6.25rem; }
+  width: 50%; }
   @media screen and (max-width: 768px) {
     .naturchoco__right {
       width: 100%;
@@ -226,14 +220,16 @@ h1, h2, h3, h4, h5, h6 {
     .specification {
       margin-top: 8rem; } }
   .specification__list {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
   .specification__item {
     display: flex;
     margin-right: 0.3125rem; }
   .specification__icon {
     margin-right: 0.3125rem; }
   .specification__text {
-    margin-right: 0.9375rem; }
+    margin-right: 0.9375rem;
+    width: 4.5625rem; }
     @media screen and (max-width: 768px) {
       .specification__text {
         text-align: start; } }
