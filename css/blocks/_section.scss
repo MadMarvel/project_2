@@ -13,6 +13,10 @@
     background-position-x: rem(71px);
     background-position-y: rem(85px);
     bottom: rem(-256px);
+
+    @include phones {
+      display: none;
+    }
   }
 }
 
@@ -22,6 +26,18 @@
   background-position-y: 50%;
   position: relative;
   z-index: 1;
+
+  @include tablets {
+  background: url(../icons/uzor_list.png) no-repeat;
+  background-position-x: 0;
+  background-position-y: 25%;
+  position: relative;
+  z-index: 1;
+  }
+
+  @include phones {
+    background: none;
+  }
 }
 
 .why:after {
@@ -34,8 +50,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 100;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .form {
-  background: url(../pic/list_form.png) no-repeat 100% 75%, url(../Elements/ягода_form.png) no-repeat 6% 75%, url(../pic/bg_form.png) no-repeat 0 0 / cover;
+  background: url(../pic/list_form.png) no-repeat 100% 75%, url(../pic/yagoda_form.png) no-repeat 6% 75%, url(../pic/bg_form.png) no-repeat 0 0 / cover;
+
+  @include tablets {
+    background: url(../pic/bg_form.png) no-repeat 0 0 / cover;
+  }
 }

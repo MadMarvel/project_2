@@ -15,6 +15,10 @@
     }
     &__row {
         display: flex;
+
+        @include phones {
+            justify-content: center;
+        }
     }
     &__block {
         flex: 1;
@@ -40,6 +44,10 @@
         border: rem(1px) solid transparent;
         background: white;
         outline: none;
+
+        @include tablets {
+            height: rem(56px);
+        }
     }
     &__input:focus {
         border-color: green;
@@ -57,9 +65,17 @@
         @include tablets {
             margin-left: 0;
         }
+
+        @include phones {
+            width: 100%;
+        }
     }
     &__wrap-left {
         width: 50%;
+
+        @include phones {
+            width: 100%;
+        }
     }
     &__buttons {
         margin-top: rem(35px);
@@ -72,10 +88,19 @@
             font-weight: 500;
             display: flex;
         }
+        &-options {
+            @include tablets {
+                margin: 20px 0;
+            }
+        }
     }
     &__btn {
         padding-top: rem(50px);
         display: flex;
+
+        @include phones {
+            justify-content: center;
+        }
         &-wrap {
             margin-left: rem(40px);
         }

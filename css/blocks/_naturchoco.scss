@@ -8,6 +8,10 @@
       padding: 0 15%;
       line-height: 1;
     }
+
+    @include phones {
+      padding: 0 0;
+    }
   }
   &__left  {
     width: 50%;
@@ -45,6 +49,7 @@
 
     @include tablets {
       padding: 0 rem(80px);
+      margin-top: rem(20px);
     }
   }
   &__pic {
