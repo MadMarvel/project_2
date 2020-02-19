@@ -137,9 +137,11 @@ h1, h2, h3, h4, h5, h6 {
         display: none; } }
   .header__container .navigation__item {
     margin: auto 0.9375rem;
-    color: #fff;
     font-family: 'Alegreya Sans', helvetica, sans-serif;
     font-weight: 400; }
+  .header__container .navigation__text {
+    text-decoration: none;
+    color: #fff; }
   .header__container .contact {
     display: flex;
     align-items: center; }
@@ -527,6 +529,13 @@ h1, h2, h3, h4, h5, h6 {
     display: flex; }
   .footer__socials-item {
     margin: 0rem 0.625rem; }
+  .footer__socials-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: #d4d4d4; }
+  .footer__socials-icon:hover {
+    fill: #000;
+    transition: 0.7s; }
 
 .footer__contact {
   width: 29.375rem;

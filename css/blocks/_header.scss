@@ -15,9 +15,13 @@
 
   .navigation__item {
     margin: auto rem(15px);
-    color: $white;
     @include Alegreya();
     font-weight: 400;
+  }
+
+  .navigation__text {
+    text-decoration: none;
+    color: $white;
   }
 
   .contact {

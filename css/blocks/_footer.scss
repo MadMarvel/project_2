@@ -46,6 +46,15 @@
   &__socials-item{
     margin: rem(0px) rem(10px);
   }
+  &__socials-icon {
+    width: rem(20px);
+    height: rem(20px);
+    fill: #d4d4d4;
+  }
+  &__socials-icon:hover{
+    fill: #000;
+    transition: 0.7s;
+  }
 }
 .footer__contact {
   width: rem(470px);
