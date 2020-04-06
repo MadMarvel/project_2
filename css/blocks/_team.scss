@@ -49,11 +49,10 @@
     .team__trigger {
       color: $green;
     }
-  }
   &__name {
     text-align: center;
     font-weight: 500;
-
+    }
     @include tablets {
       margin-top: 15px;
     }

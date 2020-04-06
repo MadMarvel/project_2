@@ -414,12 +414,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 5rem; }
 .team__item:hover .team__trigger {
   color: #0f5a47; }
-.team__name {
+.team__item:hover__name {
   text-align: center;
   font-weight: 500; }
-  @media screen and (max-width: 768px) {
-    .team__name {
-      margin-top: 15px; } }
+@media screen and (max-width: 768px) {
+  .team__item:hover {
+    margin-top: 15px; } }
 .team__trigger {
   text-decoration: none;
   color: #000;
@@ -679,10 +679,12 @@ h1, h2, h3, h4, h5, h6 {
       display: inline; } }
 
 .slider {
+  background-color: #f8faf9;
   flex-direction: row; }
   .slider__arrow {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 11.25rem; }
   .slider__main {
     display: flex; }
@@ -691,16 +693,38 @@ h1, h2, h3, h4, h5, h6 {
       align-items: center;
       margin-right: 2.1875rem; }
   .slider__spec-icon {
-    height: 12.5rem; }
+    margin-top: 4.1875rem;
+    margin-bottom: 2.875rem; }
+    .slider__spec-icon-btn {
+      width: 5.625rem;
+      height: 5.625rem;
+      background-color: #61c4d9;
+      border-radius: 0.4375rem; }
+      .slider__spec-icon-btn-pic {
+        padding-top: 0.8125rem;
+        padding-left: 1.25rem; }
+      .slider__spec-icon-btn-text {
+        text-transform: uppercase;
+        font-family: 'Alegreya Sans', helvetica, sans-serif;
+        font-size: 0.875rem;
+        font-weight: bold;
+        font-style: italic;
+        color: #fff;
+        padding-left: 1.25rem; }
+    .slider__spec-icon-btn:hover {
+      background-color: #00accf;
+      cursor: pointer; }
   .slider__spec-title {
     height: 7.8125rem; }
-  .slider__spec-box-list {
-    display: flex;
-    height: 12.5rem; }
-  .slider__spec-box-item {
-    width: 50%; }
-    .slider__spec-box-item-btn {
-      padding: 1.25rem; }
+  .slider__spec-box {
+    width: 365px; }
+    .slider__spec-box-list {
+      display: flex;
+      height: 12.5rem; }
+    .slider__spec-box-item {
+      width: 50%; }
+      .slider__spec-box-item-btn {
+        padding: 1.25rem; }
   .slider__spec-price {
     font-size: 3.125rem; }
 
